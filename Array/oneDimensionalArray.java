@@ -75,5 +75,32 @@ for(int x: myArr){
         System.out.println("Found Key");
     }
 }
+//Rotating an array(left/right)
+//Left Rotation
+int temp=myArr[0];
+for( int i=1;i<myArr.length;i++){
+    myArr[i-1]=myArr[i];
+}
+myArr[myArr.length-1]=temp;
+for(int x: myArr){
+    System.out.print(x+", ");
+}
+ System.out.println("");
+
+
+ //Right Rotation
+ int myArr2[]={10,11,9,2,99,100,121,87};
+int newtemp=myArr2[myArr2.length-1];
+System.out.println(newtemp);
+for( int i=myArr2.length-2;i<0;i--){
+    myArr2[i]=myArr2[i-1];
+    System.out.println(myArr2[i]);
+}
+myArr2[0]=newtemp;
+for(int x: myArr2){
+    System.out.print(x+", ");
+}
+ System.out.println("");
+
 }
 }
