@@ -68,5 +68,39 @@ for(int i=0;i<myArr.length;i++){
 System.out.println("The sum is "+sum);
 
 //Finding a value 
+
+for(int x: myArr){
+    if(x==key)
+    {
+        System.out.println("Found Key");
+    }
+}
+//Rotating an array(left/right)
+//Left Rotation
+int temp=myArr[0];
+for( int i=1;i<myArr.length;i++){
+    myArr[i-1]=myArr[i];
+}
+myArr[myArr.length-1]=temp;
+for(int x: myArr){
+    System.out.print(x+", ");
+}
+ System.out.println("");
+
+
+ //Right Rotation
+ int myArr2[]={1,2,3,4,5,6};
+int newtemp=myArr2[myArr2.length-1];
+System.out.println(newtemp);
+for( int i=myArr2.length-1;i>0;i--){
+    myArr2[i]=myArr2[i-1];
+   
+}
+myArr2[0]=newtemp;
+for(int x: myArr2){
+    System.out.print(x+", ");
+}
+ System.out.println("");
+
 }
 }
