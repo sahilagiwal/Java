@@ -4,6 +4,7 @@ package Array;
 
 public class oneDimensionalArray{
 public static void main(String args[]){
+
 // One Dimentional Array
 //  Initialize Array   
 int a[]=new int[5];
