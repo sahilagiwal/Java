@@ -89,12 +89,12 @@ for(int x: myArr){
 
 
  //Right Rotation
- int myArr2[]={10,11,9,2,99,100,121,87};
+ int myArr2[]={1,2,3,4,5,6};
 int newtemp=myArr2[myArr2.length-1];
 System.out.println(newtemp);
-for( int i=myArr2.length-2;i<0;i--){
+for( int i=myArr2.length-1;i>0;i--){
     myArr2[i]=myArr2[i-1];
-    System.out.println(myArr2[i]);
+   
 }
 myArr2[0]=newtemp;
 for(int x: myArr2){
