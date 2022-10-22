@@ -102,6 +102,38 @@ for(int x: myArr2){
     System.out.print(x+", ");
 }
  System.out.println("");
+ // inserting in array at a given index
+int iA[]=new int[10];
+iA[0]=1;
+iA[1]=9;
+iA[2]=2;
+iA[3]=54;
+iA[4]=11;
+iA[5]=89;
+iA[6]=76;
+
+int index=6;
+int n=6,insertval=69;
+for(int x: iA){
+    System.out.print(x+", ");
+}
+System.out.println("");
+for(int i=n;i>=index;i--){
+ iA[i+1]=iA[i];
+    if(i==index){
+        iA[i]=insertval;
+    }
+ 
 
 }
+for(int x: iA){
+    System.out.print(x+", ");
+}
+System.out.println("");
+
+}
+
+
+
+
 }
