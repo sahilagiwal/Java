@@ -130,6 +130,7 @@ for(int x: iA){
     System.out.print(x+", ");
 }
 System.out.println("");
+//insertion takes right shift and deletion takes left shift .
 
 }
 
