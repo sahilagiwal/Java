@@ -111,7 +111,9 @@ iA[3]=54;
 iA[4]=11;
 iA[5]=89;
 iA[6]=76;
-
+iA[7]=716;
+iA[8]=176;
+iA[9]=33333;
 int index=6;
 int n=6,insertval=69;
 for(int x: iA){
@@ -131,6 +133,32 @@ for(int x: iA){
 }
 System.out.println("");
 //insertion takes right shift and deletion takes left shift .
+
+//copying array
+int copyingarr[]=new int[iA.length];
+for(int i=0;i<iA.length;i++){
+    copyingarr[i]=iA[i];
+}
+System.out.print("Copying Array \n");
+for(int x: copyingarr){
+
+    System.out.print(x+", ");
+}
+//Reverse copying array
+int reversecopyarr[]=new int[iA.length];
+int j=9;
+for(int i=0;i<iA.length;i++){
+    
+    reversecopyarr[j]=iA[i];
+    j--;
+    }
+    
+
+System.out.print("\n Reverse Copying Array \n");
+for(int x: reversecopyarr){
+
+    System.out.print(x+", ");
+}
 
 }
 
