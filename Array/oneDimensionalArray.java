@@ -160,6 +160,12 @@ for(int x: reversecopyarr){
     System.out.print(x+", ");
 }
 
+//increasing the size of the array
+// create a new array of bigger size can double the .lenght of the orginal array,
+//  copy elements of orignal array to bigger array. at the end do bigger=orignal array, 
+//  this will point the orignal array to beocme a bigger array and the old value will becomce 
+//  garbage collection 
+
 }
 
 
