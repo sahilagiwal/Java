@@ -35,8 +35,40 @@ public class twoDarray {
         jagged[2]=new int[7];
 
         //Matrix Additon
-        //If both matrix are of same order then only they can be adde dor subtracted
-        //
+        //If both matrix are of same order then only they can be added or subtracted
+        int MatrixOne[][]={{3,5,9},
+                           {7,6,2},
+                           {4,3,5}};
+        int MatrixTwo[][]={{1,5,2},
+                           {6,8,4},
+                           {3,9,7}};
+        int addedMatrix[][]=new int [MatrixOne.length][MatrixOne.length];
+        for(int i=0;i<MatrixOne.length;i++){
+            for(int j=0;j<MatrixOne[i].length;j++)
+            {
+                addedMatrix[i][j]=MatrixOne[i][j]+MatrixTwo[i][j];
+            }
+        }
+
+         for(int x[]: addedMatrix){
+            for(int z: x){
+                System.out.print(z+",");
+
+            }
+            System.out.println("\n");
+
+        }
+        /*Multiplation of Matix
+        The number of colums of matrix 1 should be equal rows of matrix 2 and the size of the result
+        matix will be  row of first matix and column of second matrix*/
+        int multipliedMatix[][]=new int[MatrixOne.length][MatrixTwo[0].length];
+        for(int i=0;i<MatrixOne.length;i++)
+        {
+            for(int j=0;j<MatrixOne[0].length;j++)
+            {
+               
+            }
+        }
 
 
     }
